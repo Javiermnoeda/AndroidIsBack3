@@ -51,17 +51,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.editText1.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) binding.textView.text = binding.editText1.tag.toString()
+            if (hasFocus){
+                binding.textView.text = binding.editText1.tag.toString()
+            }
         }
 
         binding.editText2.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) binding.textView.text = binding.editText2.tag.toString()
+            if (hasFocus){
+                binding.textView.text = binding.editText2.tag.toString()
+            }
         }
 
         binding.button.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) binding.textView.text = binding.button.tag.toString()
+            if (hasFocus){
+                binding.textView.text = binding.button.tag.toString()
+            }
         }
-
     }
 
     private fun habilitarBoton(){
